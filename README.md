@@ -4,6 +4,7 @@ A fun, interactive Valentine's Day terminal app built with OpenTUI and React. As
 
 ![Valentine](https://img.shields.io/badge/Made%20with-Love-ff69b4)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Version](https://img.shields.io/badge/Version-1.0.0-green)
 
 ## ✨ Features
 
@@ -16,7 +17,7 @@ A fun, interactive Valentine's Day terminal app built with OpenTUI and React. As
   - Eventually the No button runs away completely!
 
 ### 🎮 Heart Collector Game
-Catch falling hearts to fill your Love Meter to 100%!
+Catch falling hearts to fill your Heart-O-Meter to 100%!
 
 **Heart Types:**
 | Heart | Points | Description |
@@ -42,33 +43,45 @@ Win the game and enjoy romantic love poems:
 - 60-second display per poem
 - Press 'n' to skip to the next poem
 
-## 🚀 Quick Install (One-Line)
+---
 
-### Mac / Linux:
+## 🚀 Quick Install
+
+### Option 1: One-Line Install (Recommended)
+
+**Mac / Linux:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/hangyakuzero/UNI/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Abhay-0103/Love-Meter/main/install.sh | bash
 ```
 
-### Windows (PowerShell):
+**Windows (PowerShell):**
 ```powershell
-irm https://raw.githubusercontent.com/hangyakuzero/UNI/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/Abhay-0103/Love-Meter/main/install.ps1 | iex
 ```
 
-## 📦 Manual Installation
+### Option 2: Standalone Executable (No Install Required!)
+
+**Windows:** Download from [Releases](https://github.com/Abhay-0103/Love-Meter/releases) and double-click to run!
+
+### Option 3: Manual Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/hangyakuzero/UNI.git
-cd UNI
+git clone https://github.com/Abhay-0103/Love-Meter.git
+cd Love-Meter
 
 # Install dependencies
 bun install
+
+# Run the app
+bun dev
 ```
 
-## 🎮 Usage
+---
+
+## 🎮 How to Play
 
 ```bash
-# Run the app
 bun dev
 ```
 
@@ -82,6 +95,21 @@ bun dev
 | n | Skip to next poem (celebration) |
 | q | Quit |
 
+---
+
+## 🛠️ Build Standalone Executable
+
+Build your own executable that runs without Node.js or Bun:
+
+```bash
+# Windows
+bun run build:windows
+
+# Creates: love-meter-windows.exe
+```
+
+---
+
 ## 🛠️ Tech Stack
 
 - **[OpenTUI](https://github.com/psobocinski/opentui)** - Terminal UI framework
@@ -94,7 +122,10 @@ bun dev
 ```
 Love-Meter/
 ├── src/
-│   └── index.tsx    # Main application
+│   └── index.tsx       # Main application
+├── install.sh          # Mac/Linux installer
+├── install.ps1         # Windows PowerShell installer
+├── install.bat         # Windows CMD installer
 ├── package.json
 ├── tsconfig.json
 └── README.md
@@ -118,16 +149,35 @@ Love-Meter/
 ## 🎯 How to Win
 
 1. Select "Yes" on the proposal (good luck saying no! 😏)
-2. Catch falling hearts with your basket
-3. Collect power-ups for special abilities
-4. Fill the Heart-O-Meter to 100%
-5. Enjoy the celebration with love poems! 🎉
+2. Catch falling hearts with your basket using ← → keys
+3. Collect power-ups: 🌹 💌 🧲
+4. Build combos for bonus points
+5. Fill the Heart-O-Meter to 100%
+6. Enjoy the celebration with love poems! 🎉
+
+---
+
+## 📦 Requirements
+
+- **Node.js** 18+ (for development)
+- **Bun** (auto-installed by install script)
+- Terminal with Unicode/emoji support
+
+---
+
+## 🤝 Contributing
+
+Feel free to open issues and pull requests! Let's spread the love! 💕
 
 ## 📄 License
 
 MIT License - Feel free to spread the love! 💕
 
 ---
+
+Made with 💕 for Valentine's Day
+
+**Author:** [Abhay Singh](https://github.com/Abhay-0103)
 
 Made with 💕 for Valentine's Day
 
