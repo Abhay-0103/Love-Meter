@@ -42,12 +42,24 @@ Win the game and enjoy romantic love poems:
 - 60-second display per poem
 - Press 'n' to skip to the next poem
 
-## 🚀 Installation
+## 🚀 Quick Install (One-Line)
+
+### Mac / Linux:
+```bash
+curl -fsSL https://raw.githubusercontent.com/hangyakuzero/UNI/main/install.sh | bash
+```
+
+### Windows (PowerShell):
+```powershell
+irm https://raw.githubusercontent.com/hangyakuzero/UNI/main/install.ps1 | iex
+```
+
+## 📦 Manual Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Love-Meter.git
-cd Love-Meter
+git clone https://github.com/hangyakuzero/UNI.git
+cd UNI
 
 # Install dependencies
 bun install
